@@ -1,0 +1,15 @@
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\OdysseyInterface.exe.config
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\OdysseyInterface.exe
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\OdysseyInterface.pdb
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.Form1.resources
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.Form2.resources
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.Properties.Resources.resources
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.csproj.GenerateResource.cache
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.exe
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.pdb
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\taglib-sharp.dll
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\Daniel\source\repos\Odyssey\OdysseyInterface\obj\Debug\OdysseyInterface.csproj.CopyComplete
