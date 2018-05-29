@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Libraries
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,12 @@ namespace OdysseyInterface
 {
 	public partial class Form1 : Form
 	{
+		//Initializes the interface
 		public Form1()
 		{
 			InitializeComponent();
 		}
-
+		//Log In function
 		private void BtnLog_Click(object sender, EventArgs e)
 		{
 			string user, pass;
