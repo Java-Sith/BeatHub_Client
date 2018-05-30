@@ -54,6 +54,7 @@
 			this.txtStar = new System.Windows.Forms.TextBox();
 			this.star = new System.Windows.Forms.Label();
 			this.psSong = new System.Windows.Forms.Button();
+			this.enSong = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// AddSong
@@ -116,7 +117,7 @@
 			// 
 			// plSong
 			// 
-			this.plSong.Location = new System.Drawing.Point(38, 282);
+			this.plSong.Location = new System.Drawing.Point(12, 254);
 			this.plSong.Name = "plSong";
 			this.plSong.Size = new System.Drawing.Size(92, 40);
 			this.plSong.TabIndex = 8;
@@ -268,7 +269,7 @@
 			// 
 			// psSong
 			// 
-			this.psSong.Location = new System.Drawing.Point(38, 348);
+			this.psSong.Location = new System.Drawing.Point(12, 322);
 			this.psSong.Name = "psSong";
 			this.psSong.Size = new System.Drawing.Size(92, 44);
 			this.psSong.TabIndex = 26;
@@ -276,11 +277,22 @@
 			this.psSong.UseVisualStyleBackColor = true;
 			this.psSong.Click += new System.EventHandler(this.psSong_Click);
 			// 
+			// enSong
+			// 
+			this.enSong.Location = new System.Drawing.Point(12, 385);
+			this.enSong.Name = "enSong";
+			this.enSong.Size = new System.Drawing.Size(92, 40);
+			this.enSong.TabIndex = 27;
+			this.enSong.Text = "End Song";
+			this.enSong.UseVisualStyleBackColor = true;
+			this.enSong.Click += new System.EventHandler(this.enSong_Click);
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.enSong);
 			this.Controls.Add(this.psSong);
 			this.Controls.Add(this.star);
 			this.Controls.Add(this.txtStar);
@@ -342,5 +354,6 @@
 		private System.Windows.Forms.TextBox txtStar;
 		private System.Windows.Forms.Label star;
 		private System.Windows.Forms.Button psSong;
+		private System.Windows.Forms.Button enSong;
 	}
 }

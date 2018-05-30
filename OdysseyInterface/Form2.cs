@@ -21,7 +21,7 @@ namespace OdysseyInterface
 			InitializeComponent();
 		}
 		OpenFileDialog ofd = new OpenFileDialog();
-		private NAudio.Wave.WaveFileReader wave = null;
+		private NAudio.Wave.BlockAlignReductionStream wave = null;
 		private NAudio.Wave.DirectSoundOut output = null;
 		//Add Song function
 		private void AddSong_Click(object sender, EventArgs e)
@@ -41,23 +41,11 @@ namespace OdysseyInterface
 			{
 				return;
 			}
-			SaveFileDialog save = new SaveFileDialog();
-			if (save.ShowDialog() != DialogResult.OK)
-			{
-				return;
-			}
-			using (Mp3FileReader mp3 = new Mp3FileReader(ofd.FileName))
-			{
-				using (WaveStream pcm = WaveFormatConversionStream.CreatePcmStream(mp3))
-				{
-					WaveFileWriter.CreateWaveFile(save.FileName, pcm);
-					wave = new NAudio.Wave.WaveFileReader(save.FileName);
-					output = new NAudio.Wave.DirectSoundOut();
-					output.Init(new NAudio.Wave.WaveChannel32(wave));
-					output.Play();
-					psSong.Enabled = true;
-				}
-			}
+			NAudio.Wave.WaveStream pcm = NAudio.Wave.WaveFormatConversionStream.CreatePcmStream(new NAudio.Wave.Mp3FileReader(ofd.FileName));
+			wave = new NAudio.Wave.BlockAlignReductionStream(pcm);
+			output = new NAudio.Wave.DirectSoundOut();
+			output.Init(wave);
+			output.Play();
 			starQ.Enabled = true;
 		}
 		//Pause Song function
@@ -100,6 +88,24 @@ namespace OdysseyInterface
 			if (star == "1")
 			{
 				MessageBox.Show("What is this even doing here?");
+			}
+		}
+		//End Song function
+		private void enSong_Click(object sender, EventArgs e)
+		{
+			if (output != null)
+			{
+				if (output.PlaybackState == NAudio.Wave.PlaybackState.Playing)
+				{
+					output.Stop();
+					output.Dispose();
+					output = null;
+				}
+			}
+			if (wave != null)
+			{
+				wave.Dispose();
+				wave = null;
 			}
 		}
 	}
